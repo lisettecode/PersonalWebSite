@@ -104,7 +104,13 @@ b {
     background: linear-gradient(to top, #FFD700, #4A7C00 ); 
     color: antiquewhite;
 }
-
+/*------------------------------------Inicio de Carrusel------------------------------------------------*/
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+/*------------------------------------Fin de Carrusel------------------------------------------------*/
 .herramientas {
      width: 50%;
     height: auto;

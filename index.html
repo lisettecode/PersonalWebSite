@@ -6,39 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Josefin+Slab:400,700italic' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
-<div class="banner"><b> <h1 class="header1">Lisette Aguilar Bueno</h1><h6 class="header6">FrontEnd-developer.</h6> <br> <br> <br> <br> <br> <h3 class="header3">¡Bienvenid@!</h3> <h4 class="header4">"Ésta es mi página de proyectos; sigue adelante y conoce más sobre mí."</h4></b>
-</div>
 
+<body>
+
+<!----------------------------------------------- Inicio de Navegación -------------------->
+    <nav id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">Inicio</a>
+          <a href="#acercaDeMi">Acerca de mí</a>
+          <a href="#proyetosMaquetacion">Proyetos Maquetación</a>
+          <a href="#proyetosApp">Proyetos App</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#contactame">Contáctame</a>
+        </div>
+    </nav>
+    <center><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></center>
+<!----------------------------------------------- Fin de Navegación -------------------->
+        
+    <section class="banner img-responsive"><b> <h1 class="header1">Lisette Aguilar Bueno</h1><h6 class="header6">FrontEnd-developer.</h6> <br> <br> <br> <br> <br> <h3 class="header3">¡Bienvenid@!</h3> <h4 class="header4">"Ésta es mi página de proyectos; sigue adelante y conoce más sobre mí."</h4></b>
+    </section>
    
-   <div id="pinContainer">
+   <section id="pinContainer">
     
-     <div class="panel first" > <b>ABOUT ME  
+     <div class="panel first" id="acercaDeMi"> <b>Acerca de Mí  
         <br> <br> Soy apasionada del diseño y la programación, por lo que me convertí en <bold>FrontEnd-Developer</bold> con la formación de Laboratoria. </b>
      </div>
      
      
-     <div class="panel second" style="background: linear-gradient(to left, #ff00cc , #333399);">
-         <b>PROYECTOS A</b>
+     <div class="panel second" id="proyetosMaquetacion" style="background: linear-gradient(to left, #ff00cc , #333399);">
+        <b>Proyectos de Maquetación</b>
      </div>
-     <div class="panel third" style="background: linear-gradient(to left, #FF8C00, #DC143C);">
-          <b>PROYECTOS B</b> 
+     
+     <div class="panel third" id="proyetosApp" style="background: linear-gradient(to left, #FF8C00, #DC143C);">
+        <b>Proyectos App</b> 
      </div>
-     <div class="panel fourth" style="background: linear-gradient(to left, #A0522D, #008080);">
-          <b>SKILLS</b>
+     
+     <div class="panel fourth" id="Habilidades" style="background: linear-gradient(to left, #A0522D, #008080);">
+        <b> Habilidades <br><br>
+            <div class="row skills">
+                <div class="col-xs-6 col-md-3 col-md-offset-3 text-left">
+                    <div class="herramientas">
+                       <span>HTML</span><br>
+                       <span>CSS</span><br>
+                       <span>BOOTSTRAP</span><br>
+                       <span>JQUERY</span><br>
+                       <span>JAVASCRIPT</span><br>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 text-left">
+                    <div class="avance">
+                       <progress class="skills" value="85" max="100" ></progress><br>
+                       <progress class="skillsCss" value="85" max="100"></progress><br>
+                       <progress class="skillsBootstrap" value="80" max="100"></progress><br>
+                       <progress class="skillsJquery" value="48" max="100"></progress><br>
+                       <progress class="skillsJs" value="48" max="100"></progress><br>
+                    </div>
+                </div>
+            </div> 
+        </b> 
      </div>
-     <div class="panel fifth" style="background: linear-gradient(to left, #BC8F8F, #333399);">
-          <b>CONTÁCTAME</b>
+     
+    <div class="panel fifth" id="contactame" style="background: linear-gradient(to left, #BC8F8F, #333399);">
+          <b>Contáctame</b>
      </div>
-</div>
+
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
-</body>
 </html>
 

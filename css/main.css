@@ -126,3 +126,5 @@ footer span.copyright,footer ul.quicklinks{font-family:Montserrat,"Helvetica Neu
 ul.banner-social-buttons > li {display: block;margin-bottom: 20px;padding: 0}
 ul.banner-social-buttons > li:last-child {margin-bottom: 0}}
 
+/*-------------------SECCIÓN FOOTER----------------*/
+footer {padding: 50px 0;background-color: #f8f8f8}
